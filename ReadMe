@@ -1,0 +1,15 @@
+        let user = User()
+        user.name = "zhang san"
+        user.age = 30
+        user.userId  = 30
+        userTable.save(user)
+        
+        let users = userTable.queryAll()
+        for user in users {
+            print(user.name)
+            print(user.age)
+            print(user.userId)
+        }
+        
+        let result = userTable.delete(["userId"], values: [20])
+        print(result)
