@@ -1,3 +1,5 @@
+        let userTable = Table.newInstance(User.self)
+
         let user = User()
         user.name = "zhang san"
         user.age = 30
